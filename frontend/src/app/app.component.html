@@ -324,6 +324,19 @@
   </div>
 </main>
 
+<div>
+  <h1>Students List</h1>
+  <ul>
+    @for (student of students; track student.id) {
+      <li>{{ student.student_name }} - {{ student.student_email }}</li>
+    }
+    @empty {
+      <li>No students available.</li>
+    }
+  </ul>
+</div>
+
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->

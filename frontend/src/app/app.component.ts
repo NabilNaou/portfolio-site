@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'frontend';
+  students: any[] = [];
+
+  constructor(private apiService: ApiService) {}
+
+  ngOnInit(): void {
+    this.apiService.getStudents().subscribe(data => {
+      this.students = data;
+    });
+  }
 }

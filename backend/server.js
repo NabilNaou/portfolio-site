@@ -22,7 +22,7 @@ mongoose
     process.exit();
   });
 
-const studentRoutes = require("./routes/student.routes");
+const studentRoutes = require("./routes/studentRoutes");
 app.use("/api", studentRoutes);
 
 app.get("/", (req, res) => {

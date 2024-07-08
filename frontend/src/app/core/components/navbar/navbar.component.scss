@@ -1,3 +1,29 @@
-.spacer {
-  flex: 1 1 auto;
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  z-index: 5;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+
+  .mat-toolbar-row {
+    padding: 0 !important;
+  }
+
+  .name {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #007fff;
+      text-decoration: underline;
+    }
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
 }

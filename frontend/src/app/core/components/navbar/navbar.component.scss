@@ -1,44 +1,48 @@
-.custom-navbar {
-  position: fixed;
-  top: 0;
-  width: 95%;
-  z-index: 5;
-  background-color: transparent;
-  backdrop-filter: blur(3px);
-  padding: 0 !important;
-  border-bottom: 1px solid white;
+.navbar-container {
+  padding-bottom: 2rem;
 
-  .name {
-    margin-right: 1em;
-    font-family: "Fira Code", serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  .custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    z-index: 5;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 
-    &:hover {
-      text-decoration: underline;
-      background: none;
+    .name {
+      margin-right: 1em;
+      font-family: "Fira Code", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      &:hover {
+        text-decoration: underline;
+        background: none;
+      }
     }
-  }
 
-  .job {
-    font-size: 0.75em;
-    font-family: "Fira Code", serif;
-    background: linear-gradient(90deg, #007fff, #00ff88);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0 1em;
-  }
-
-  a {
-    text-decoration: none;
-    margin: 0 0px;
-    &:hover {
-      color: #ffffff;
-      text-decoration: underline;
+    .job {
+      font-size: 0.75em;
+      font-family: "Fira Code", serif;
+      background: linear-gradient(90deg, #007fff, #00ff88);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0 1em;
     }
-  }
 
-  .spacer {
-    flex: 1 1 auto;
+    a {
+      text-decoration: none;
+      margin: 0 0px;
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+
+    .spacer {
+      flex: 1 1 auto;
+    }
   }
 }

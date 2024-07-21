@@ -1,10 +1,32 @@
-<mat-toolbar class="custom-navbar">
-  <a mat-button routerLink="/" class="name">Nabil Naou</a>
-  <span class="job">Software Engineer</span>
-  <span class="spacer"></span>
-  <nav>
-    <a mat-button routerLink="/portfolio">portfolio,</a>
-    <a mat-button routerLink="/playground">projects,</a>
-    <a mat-button routerLink="/contact">contact</a>
-  </nav>
-</mat-toolbar>
+<header class="navbar-container">
+  <mat-toolbar role="banner" class="custom-navbar">
+    <a
+      mat-button
+      routerLink="/"
+      class="name"
+      aria-label="Return to Nabil Naou's homepage"
+      >Nabil Naou</a
+    >
+    <span class="job" aria-label="Nabil Naou's job title, Software Engineer"
+      >Software Engineer</span
+    >
+    <span class="spacer"></span>
+    <nav role="navigation" aria-label="Main Navigation">
+      <a
+        mat-button
+        routerLink="/portfolio"
+        aria-label="View Nabil Naou's portfolio"
+        >portfolio,</a
+      >
+      <a
+        mat-button
+        routerLink="/playground"
+        aria-label="View Nabil Naou's projects"
+        >projects,</a
+      >
+      <a mat-button routerLink="/contact" aria-label="Contact Nabil Naou"
+        >contact</a
+      >
+    </nav>
+  </mat-toolbar>
+</header>

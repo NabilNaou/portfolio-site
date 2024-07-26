@@ -5,9 +5,13 @@
       routerLink="/"
       class="name"
       aria-label="Return to Nabil Naou's homepage"
+      i18n="@@homePageLinkLabel"
       >Nabil Naou</a
     >
-    <span class="job" aria-label="Nabil Naou's job title, Software Engineer"
+    <span
+      class="job"
+      aria-label="Nabil Naou's job title, Software Engineer"
+      i18n="@@jobTitle"
       >Software Engineer</span
     >
     <span class="spacer"></span>
@@ -16,15 +20,21 @@
         mat-button
         routerLink="/portfolio"
         aria-label="View Nabil Naou's portfolio"
+        i18n="@@portfolioLinkLabel"
         >portfolio,</a
       >
       <a
         mat-button
         routerLink="/playground"
         aria-label="View Nabil Naou's projects"
+        i18n="@@projectsLinkLabel"
         >projects,</a
       >
-      <a mat-button routerLink="/contact" aria-label="Contact Nabil Naou"
+      <a
+        mat-button
+        routerLink="/contact"
+        aria-label="Contact Nabil Naou"
+        i18n="@@contactLinkLabel"
         >contact</a
       >
     </nav>
